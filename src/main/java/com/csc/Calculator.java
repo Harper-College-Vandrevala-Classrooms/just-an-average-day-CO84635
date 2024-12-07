@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Calculator {
   public int maximumUsingForLoop(int[] nums){
+    if (nums.length == 0) return 0;
     int max = nums[0];
     for (int i = 0; i < nums.length; i++){
       if (nums[i] > max) {
@@ -14,6 +15,7 @@ public class Calculator {
   }
 
   public int minimumUsingForLoop(int[] nums){
+    if (nums.length == 0) return 0;
     int min = nums[0];
     for (int i = 0; i < nums.length; i++){
       if (nums[i] < min) {
@@ -24,6 +26,7 @@ public class Calculator {
   }
 
   public int sumUsingForLoop(int[] nums){
+    if (nums.length == 0) return 0;
     int sum = 0;
     for (int i = 0; i < nums.length; i++){
         sum += nums[i];
@@ -32,6 +35,7 @@ public class Calculator {
   }
 
   public double averageUsingForLoop(int[] nums){
+    if (nums.length == 0) return 0;
     double sum = 0;
     for (int i = 0; i < nums.length; i++){
       sum += nums[i];
@@ -40,19 +44,19 @@ public class Calculator {
   }
 
   public int maximumUsingStreams(int[] nums) {
-    return Arrays.stream(nums).max().orElse(0);
+    return nums.length == 0 ? 0 : Arrays.stream(nums).max().orElse(0);
   }
 
   public int minimumUsingStreams(int[] nums) {
-    return Arrays.stream(nums).min().orElse(0);
+    return nums.length == 0 ? 0 : Arrays.stream(nums).min().orElse(0);
   }
 
   public int sumUsingStreams(int[] nums) {
-    return Arrays.stream(nums).sum();
+    return nums.length == 0 ? 0 : Arrays.stream(nums).sum();
   }
 
   public double averageUsingStreams(int[] nums){
-    return Arrays.stream(nums).average().orElse(0.0);
+    return nums.length == 0 ? 0 : Arrays.stream(nums).average().orElse(0.0);
   }
 
   public static void main(String[] args) {
