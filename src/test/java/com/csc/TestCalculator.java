@@ -100,6 +100,16 @@ public class TestCalculator {
   }
 
   @Test
+  void testSumWithNegativeNumbersForLoop() {
+      assertEquals(-60, calculator.sumUsingForLoop(new int[]{-10, -20, -30}));
+  }
+
+  @Test
+  void testAverageWithNegativeNumbersForLoop() {
+      assertEquals(-20.0, calculator.averageUsingForLoop(new int[]{-10, -20, -30}));
+  }
+
+  @Test
   void testAverageWithLargeNumbersForLoop() {
     assertEquals(1000000.0, calculator.averageUsingForLoop(new int[]{1000000, 1000000, 1000000}));
   }
@@ -119,48 +129,114 @@ public class TestCalculator {
     assertEquals(0, calculator.averageUsingForLoop(new int[]{}));
   }
 
-  @Test
-  void testMaximumUsingStreamsWithLargeNumbersUsingStreams() {
-    assertEquals(Integer.MAX_VALUE, calculator.maximumUsingStreams(new int[]{0, 10, Integer.MAX_VALUE, 100, 7}));
+    @Test
+  void testMaximumWithLargeAndSmallUsingStreams() {
+      assertEquals(200000, calculator.maximumUsingStreams(new int[]{-1000, 5, 247, 200000, -75}));
   }
 
   @Test
-  void testMaximumUsingStreamsWithEmptyUsingStreams() {
-    assertEquals(0, calculator.maximumUsingStreams(new int[]{}));
+  void testMaximumWithRegularNumbersUsingStreams() {
+      assertEquals(5, calculator.maximumUsingStreams(new int[]{1, 2, 3, 4, 5}));
   }
 
   @Test
-  void testMinimumUsingStreamsWithEmptyUsingStreams() {
-    assertEquals(0, calculator.minimumUsingStreams(new int[]{}));
+  void testMaximumWithZerosUsingStreams() {
+      assertEquals(0, calculator.maximumUsingStreams(new int[]{0, 0, 0, 0, 0}));
   }
 
   @Test
-  void testSumUsingStreamsWithLargeNumbersUsingStreams() {
-    assertEquals(3000000, calculator.sumUsingStreams(new int[]{1000000, 1000000, 1000000}));
+  void testMaximumWithMaxValueUsingStreams() {
+      assertEquals(Integer.MAX_VALUE, calculator.maximumUsingStreams(new int[]{0, 10, Integer.MAX_VALUE, 100, 7}));
   }
 
   @Test
-  void testAverageUsingStreamsWithLargeNumbersUsingStreams() {
-    assertEquals(1000000.0, calculator.averageUsingStreams(new int[]{1000000, 1000000, 1000000}));
+  void testMaximumWithNegativeNumbersUsingStreams() {
+      assertEquals(-1, calculator.maximumUsingStreams(new int[]{-30, -10, -700, -100, -1, -Integer.MAX_VALUE}));
   }
 
   @Test
-  void testSumUsingStreamsWithZerosUsingStreams() {
-    assertEquals(0, calculator.sumUsingStreams(new int[]{0, 0, 0}));
+  void testMaximumWithEmptyArrayUsingStreams() {
+      assertEquals(0, calculator.maximumUsingStreams(new int[]{}));
   }
 
   @Test
-  void testAverageUsingStreamsWithZerosUsingStreams() {
-    assertEquals(0.0, calculator.averageUsingStreams(new int[]{0, 0, 0}));
+  void testMinimumWithLargeAndSmallUsingStreams() {
+      assertEquals(-1000, calculator.minimumUsingStreams(new int[]{-1000, 5, 247, 200000, -75}));
   }
 
   @Test
-  void testSumUsingStreamsWithRegularNumbersUsingStreams() {
-    assertEquals(152, calculator.sumUsingStreams(new int[]{0, 10, 35, 100, 7}));
+  void testMinimumWithRegularNumbersUsingStreams() {
+      assertEquals(1, calculator.minimumUsingStreams(new int[]{1, 2, 3, 4, 5}));
   }
 
   @Test
-  void testAverageUsingStreamsWithRegularNumbersUsingStreams() {
-    assertEquals(30.4, calculator.averageUsingStreams(new int[]{0, 10, 35, 100, 7}));
+  void testMinimumWithMaxValueUsingStreams() {
+      assertEquals(0, calculator.minimumUsingStreams(new int[]{0, 10, Integer.MAX_VALUE, 100, 7}));
   }
+
+  @Test
+  void testMinimumWithZerosUsingStreams() {
+      assertEquals(0, calculator.minimumUsingStreams(new int[]{0, 0, 0, 0, 0}));
+  }
+
+  @Test
+  void testMinimumWithNegativeNumbersUsingStreams() {
+      assertEquals(-Integer.MAX_VALUE, calculator.minimumUsingStreams(new int[]{-30, -10, -700, -100, -1, -Integer.MAX_VALUE}));
+  }
+
+  @Test
+  void testMinimumWithEmptyArrayUsingStreams() {
+      assertEquals(0, calculator.minimumUsingStreams(new int[]{}));
+  }
+
+  @Test
+  void testSumWithLargeNumbersUsingStreams() {
+      assertEquals(3000000, calculator.sumUsingStreams(new int[]{1000000, 1000000, 1000000}));
+  }
+
+  @Test
+  void testSumWithZerosUsingStreams() {
+      assertEquals(0, calculator.sumUsingStreams(new int[]{0, 0, 0}));
+  }
+
+  @Test
+  void testSumWithRegularNumbersUsingStreams() {
+      assertEquals(152, calculator.sumUsingStreams(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testSumWithEmptyArrayUsingStreams() {
+      assertEquals(0, calculator.sumUsingStreams(new int[]{}));
+  }
+
+  @Test
+  void testSumWithNegativeNumbersUsingStreams() {
+      assertEquals(-60, calculator.sumUsingStreams(new int[]{-10, -20, -30}));
+  }
+
+  @Test
+  void testAverageWithLargeNumbersUsingStreams() {
+      assertEquals(1000000.0, calculator.averageUsingStreams(new int[]{1000000, 1000000, 1000000}));
+  }
+
+  @Test
+  void testAverageWithZerosUsingStreams() {
+      assertEquals(0.0, calculator.averageUsingStreams(new int[]{0, 0, 0}));
+  }
+
+  @Test
+  void testAverageWithRegularNumbersUsingStreams() {
+      assertEquals(30.4, calculator.averageUsingStreams(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testAverageWithEmptyArrayUsingStreams() {
+      assertEquals(0.0, calculator.averageUsingStreams(new int[]{}));
+  }
+
+  @Test
+  void testAverageWithNegativeNumbersUsingStreams() {
+      assertEquals(-20.0, calculator.averageUsingStreams(new int[]{-10, -20, -30}));
+  }
+
 }
