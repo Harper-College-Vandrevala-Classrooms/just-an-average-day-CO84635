@@ -18,4 +18,44 @@ public class TestCalculator {
   void itWorks() {
     assertEquals(true, true);
   }
+
+  @Test
+  void testMaximumWithForLoop() {
+    assertEquals(100, calculator.maximumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testMinimumWithForLoop() {
+    assertEquals(0, calculator.maximumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testSumWithForLoop() {
+    assertEquals(142, calculator.maximumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testAverageWithForLoop() {
+    assertEquals(30.4, calculator.maximumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testMaximumUsingStreams(){
+    assertEquals(100, calculator.maximumUsingStreams(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testMinimumUsingStreams(){
+    assertEquals(0, calculator.minimumUsingStreams(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testSumUsingStreams(){
+    assertEquals(142, calculator.sumUsingStreams(new int[]{0, 10, 35, 100, 7}));
+  }
+
+  @Test
+  void testAverageUsingStreams(){
+    assertEquals(30.4, calculator.averageUsingSteams(new int[]{0, 10, 35, 100, 7}));
+  }
 }
