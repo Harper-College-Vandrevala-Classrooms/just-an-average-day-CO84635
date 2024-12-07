@@ -31,7 +31,7 @@ public class TestCalculator {
 
   @Test
   void testSumWithForLoop() {
-    assertEquals(142, calculator.sumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
+    assertEquals(152, calculator.sumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
   }
 
   @Test
@@ -51,7 +51,7 @@ public class TestCalculator {
 
   @Test
   void testSumUsingStreams(){
-    assertEquals(142, calculator.sumUsingStreams(new int[]{0, 10, 35, 100, 7}));
+    assertEquals(152, calculator.sumUsingStreams(new int[]{0, 10, 35, 100, 7}));
   }
 
   @Test
