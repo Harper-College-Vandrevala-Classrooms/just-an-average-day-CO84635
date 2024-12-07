@@ -51,7 +51,7 @@ public class Calculator {
     return Arrays.stream(nums).sum();
   }
 
-  public double averageUsingSteams(int[] nums){
+  public double averageUsingStreams(int[] nums){
     return Arrays.stream(nums).average().orElse(0.0);
   }
 
