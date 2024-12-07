@@ -26,17 +26,17 @@ public class TestCalculator {
 
   @Test
   void testMinimumWithForLoop() {
-    assertEquals(0, calculator.maximumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
+    assertEquals(0, calculator.minimumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
   }
 
   @Test
   void testSumWithForLoop() {
-    assertEquals(142, calculator.maximumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
+    assertEquals(142, calculator.sumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
   }
 
   @Test
   void testAverageWithForLoop() {
-    assertEquals(30.4, calculator.maximumUsingForLoop(new int[]{0, 10, 35, 100, 7}));
+    assertEquals(30.4, calculator.averageUsingForLoop(new int[]{0, 10, 35, 100, 7}));
   }
 
   @Test
