@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.csc.TestCalculator" tests="30" skipped="0" failures="0" errors="0" timestamp="2024-12-07T18:51:36" hostname="SPACETOP" time="0.089">
+  <properties/>
+  <testcase name="testSumWithRegularNumbersForLoop()" classname="com.csc.TestCalculator" time="0.02"/>
+  <testcase name="testAverageUsingStreamsWithRegularNumbersUsingStreams()" classname="com.csc.TestCalculator" time="0.006"/>
+  <testcase name="testMinimumZeroWithForLoop()" classname="com.csc.TestCalculator" time="0.002"/>
+  <testcase name="testAverageWithEmptyArrayForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMaximumWithNegativeNumbersWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testSumUsingStreamsWithRegularNumbersUsingStreams()" classname="com.csc.TestCalculator" time="0.002"/>
+  <testcase name="testAverageUsingStreamsWithLargeNumbersUsingStreams()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMaximumUsingStreamsWithEmptyUsingStreams()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testSumUsingStreamsWithZerosUsingStreams()" classname="com.csc.TestCalculator" time="0.002"/>
+  <testcase name="testMinimumWithEmptyArrayWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testAverageWithRegularNumbersForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testAverageUsingStreamsWithZerosUsingStreams()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMinimumWithMaxWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMaximumWithMaxWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testAverageWithZerosForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMaximumZeroWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMinimumWithNegativeNumbersWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testAverageWithLargeNumbersForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testSumWithLargeNumbersForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMinimumWithLargeAndSmallWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testSumWithZerosForLoop()" classname="com.csc.TestCalculator" time="0.0"/>
+  <testcase name="testMaximumWithLargeAndSmallWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testSumUsingStreamsWithLargeNumbersUsingStreams()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMinimumRegularWithForLoop()" classname="com.csc.TestCalculator" time="0.001"/>
+  <testcase name="testMaximumUsingStreamsWithLargeNumbersUsingStreams()" classname="com.csc.TestCalculator" time="0.007"/>
+  <testcase name="testSumWithEmptyArrayForLoop()" classname="com.csc.TestCalculator" time="0.0"/>
+  <testcase name="testMaximumRegularWithForLoop()" classname="com.csc.TestCalculator" time="0.0"/>
+  <testcase name="testMaximumWithEmptyArrayWithForLoop()" classname="com.csc.TestCalculator" time="0.0"/>
+  <testcase name="testMinimumUsingStreamsWithEmptyUsingStreams()" classname="com.csc.TestCalculator" time="0.0"/>
+  <testcase name="itWorks()" classname="com.csc.TestCalculator" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

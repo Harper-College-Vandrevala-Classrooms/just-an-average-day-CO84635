@@ -51,12 +51,12 @@ public class TestCalculator {
 
   @Test
   void testMinimumWithLargeAndSmallWithForLoop() {
-    assertEquals(0, calculator.minimumUsingForLoop(new int[]{-1000, 5, 247, 200000, -75}));
+    assertEquals(-1000, calculator.minimumUsingForLoop(new int[]{-1000, 5, 247, 200000, -75}));
   }
 
   @Test
   void testMinimumRegularWithForLoop() {
-    assertEquals(0, calculator.minimumUsingForLoop(new int[]{1, 2, 3, 4, 5}));
+    assertEquals(1, calculator.minimumUsingForLoop(new int[]{1, 2, 3, 4, 5}));
   }
 
   @Test
